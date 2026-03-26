@@ -11,6 +11,7 @@ const Page = () => {
                 </section>
                 <UploadForm />
             </div>
+
         </main>
     )
 }

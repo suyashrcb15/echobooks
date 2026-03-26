@@ -114,23 +114,25 @@ export const ASSISTANT_ID = process.env.NEXT_PUBLIC_ASSISTANT_ID!;
 // 11Labs Voice IDs - Optimized for conversational AI
 // Voices selected for natural, engaging book conversations
 export const voiceOptions = {
-    // Male voices
-    dave: { id: 'CYw3kZ02Hs0563khs1Fj', name: 'Dave', description: 'Young male, British-Essex, casual & conversational' },
-    daniel: { id: 'onwK4e9ZLuTAKqWW03F9', name: 'Daniel', description: 'Middle-aged male, British, authoritative but warm' },
-    chris: { id: 'iP95p4xoKVk53GoZ742B', name: 'Chris', description: 'Male, casual & easy-going' },
-    // Female voices
-    rachel: { id: '21m00Tcm4TlvDq8ikWAM', name: 'Rachel', description: 'Young female, American, calm & clear' },
-    sarah: { id: 'EXAVITQu4vr4xnSDxMaL', name: 'Sarah', description: 'Young female, American, soft & approachable' },
+    Kanika: { id: 'H6QPv2pQZDcGqLwDTIJQ', name: 'Kanika' },
+
+    // Indian voices
+    Devi: { id: 'MF4J4IDTRo0AxOO4dpFR', name: 'Devi', description: 'Indian female voice' },
+    Monika: { id: '1qEiC6qsybMkmnNdVMbK', name: 'Monika', description: 'Indian female voice' },
+    Vihan: { id: 'bUTE2M5LdnqaUCd5tJB3', name: 'Vihan', description: 'Indian male voice' },
+    Raju: { id: 'zT03pEAEi0VHKciJODfn', name: 'Raju', description: 'Indian male voice' },
+    Niraj: {id: 'zgqefOY5FPQ3bB7OZTVR', name: 'Niraj', description: 'Indian male voice' },
+
 };
 
 // Voice categories for the selector UI
 export const voiceCategories = {
-    male: ['dave', 'daniel', 'chris'],
-    female: ['rachel', 'sarah'],
+    male: ['Vihan', 'Raju', 'Niraj'],
+    female: ['Devi', 'Monika', 'Kanika'],
 };
 
 // Default voice
-export const DEFAULT_VOICE = 'rachel';
+export const DEFAULT_VOICE = 'Kanika';
 
 // ElevenLabs voice settings optimized for conversational AI
 export const VOICE_SETTINGS = {
