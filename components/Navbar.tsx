@@ -10,6 +10,7 @@ import { SignInButton, UserButton, Show, useUser } from "@clerk/nextjs";
 const navItems = [
     { label: "Library", href: "/" },
     { label: "Add New", href: "/books/new" },
+    { label: "Pricing", href: "/subscriptions" },
 ];
 
 const Navbar = () => {

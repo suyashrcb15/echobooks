@@ -27,6 +27,7 @@ const VapiControls = ({ book }: { book: IBook }) => {
     }, [isBillingError, limitError, router, clearError]);
 
     const formatDuration = (seconds: number) => {
+        if (!seconds && seconds !== 0) return "15:00";
         const mins = Math.floor(seconds / 60);
         const secs = seconds % 60;
         return `${mins}:${secs.toString().padStart(2, '0')}`;
@@ -41,6 +42,7 @@ const VapiControls = ({ book }: { book: IBook }) => {
             case 'speaking': return { label: 'Speaking', color: 'vapi-status-dot-speaking' };
             default: return { label: 'Ready', color: 'vapi-status-dot-ready' };
         }
+
     };
 
     const statusDisplay = getStatusDisplay();
@@ -79,10 +81,10 @@ const VapiControls = ({ book }: { book: IBook }) => {
 
                     <div className="flex flex-col gap-4 flex-1">
                         <div>
-                            <h1 className="text-2xl sm:text-3xl font-bold font-serif text-[#212a3b] mb-1">
+                            <h1 className="text-2xl sm:text-3xl font-bold font-serif text-[#E5D3B0] mb-1">
                                 {book.title}
                             </h1>
-                            <p className="text-[#3d485e] font-medium">by {book.author}</p>
+                            <p className="text-[#E5D3B0] font-medium">by {book.author}</p>
                         </div>
 
                         <div className="flex flex-wrap gap-3">

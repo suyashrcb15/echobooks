@@ -37,7 +37,7 @@ export default function RootLayout({
       >
       <Navbar />
         {children}
-      <Toaster/>
+      <Toaster richColors toastOptions={{}} />
       </body>
     </html>
       </ClerkProvider>

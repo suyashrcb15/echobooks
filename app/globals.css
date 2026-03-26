@@ -1253,3 +1253,125 @@ button[data-variant='unstyled'] *,
     background: rgba(200,169,126,0.06) !important;
     border-color: var(--gold-border) !important;
 }
+/* =============================================
+   SUBSCRIPTIONS PAGE
+   Add these rules to your globals.css @layer utilities
+   ============================================= */
+
+/* ── Page layout ── */
+.subs-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.subs-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 300;
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+    color: var(--text-primary);
+}
+.subs-title em {
+    font-style: italic;
+    color: var(--gold);
+}
+
+.subs-subtitle {
+    font-size: 1rem;
+    color: var(--text-muted);
+    max-width: 460px;
+    line-height: 1.7;
+    font-weight: 300;
+}
+.subs-subtitle strong {
+    color: var(--gold);
+    font-weight: 500;
+}
+
+/* ── Active plan strip ── */
+.subs-current-plan {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.55rem 1.25rem;
+    background: rgba(200, 169, 126, 0.08);
+    border: 1px solid var(--gold-border);
+    border-radius: 999px;
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+    letter-spacing: 0.04em;
+    margin-bottom: 3rem;
+}
+.subs-plan-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--gold);
+    box-shadow: 0 0 6px rgba(200, 169, 126, 0.6);
+    flex-shrink: 0;
+}
+
+/* ── Pricing table wrapper ── */
+.subs-table-wrapper {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 3rem;
+}
+
+/* ── Clerk card overrides (dark luxury) ── */
+.subs-clerk-card {
+    background: var(--bg-card) !important;
+    border: 1px solid var(--border-subtle) !important;
+    border-radius: 14px !important;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease !important;
+}
+.subs-clerk-card:hover {
+    border-color: var(--gold-border) !important;
+    box-shadow: var(--shadow-gold) !important;
+}
+.subs-clerk-card-title {
+    font-family: 'Cormorant Garamond', serif !important;
+    font-size: 1.5rem !important;
+    font-weight: 400 !important;
+    color: var(--text-primary) !important;
+}
+.subs-clerk-card-price {
+    font-family: 'Cormorant Garamond', serif !important;
+    color: var(--gold) !important;
+}
+.subs-clerk-feature-list {
+    color: var(--text-secondary) !important;
+}
+.subs-clerk-cta {
+    background: linear-gradient(135deg, #c8a97e 0%, #a07850 100%) !important;
+    color: #0d0b0e !important;
+    border-radius: 4px !important;
+    font-family: 'DM Sans', sans-serif !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.06em !important;
+    text-transform: uppercase !important;
+    font-size: 0.78rem !important;
+    border: none !important;
+    transition: all 0.3s ease !important;
+}
+.subs-clerk-cta:hover {
+    background: linear-gradient(135deg, #e8c89a 0%, #c8a97e 100%) !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 6px 20px rgba(200, 169, 126, 0.3) !important;
+}
+
+/* ── Footnote ── */
+.subs-footnote {
+    text-align: center;
+    font-size: 0.78rem;
+    color: var(--text-faint);
+    max-width: 460px;
+    margin: 0 auto;
+    line-height: 1.7;
+    letter-spacing: 0.02em;
+}
